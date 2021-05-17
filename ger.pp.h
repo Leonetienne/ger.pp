@@ -5,6 +5,7 @@
 // These are macros to support modifiers
 #define ganzzahl int
 #define zeichen char
+#define kurze short
 #define gleitkommazahl float
 #define doppel double
 #define lange long
@@ -16,10 +17,22 @@ typedef void nichts;
 #define klasse class
 #define struktur struct
 #define vereinigung union
+#define privat private
+#define oeffentlich public
+#define geschuetzt protected
 
 // Misc keywords
 #define rueckgeben return
 #define nullzgr nullptr
+#define virtuell virtual
+#define fertig final
+#define ueberschreibend override
+#define keineausnahme noexcept
+#define nichtverwerfen nodiscard
+#define konstante const
+#define konstausdr constexpr
+#define mutierbar mutable
+#define anfaellig volatile
 
 // Switch
 #define schalter switch
