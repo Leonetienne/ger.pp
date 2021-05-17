@@ -4,9 +4,9 @@
 
 namespace std
 {
-    statisch std::ostream& aus = cout;
-    statisch std::ostream& err = cerr;
-    statisch std::istream& ein = cin;
+    statische std::ostream& aus = cout;
+    statische std::ostream& err = cerr;
+    statische std::istream& ein = cin;
 
     // std::endz => std::endl
     template <class _Elem, class _Traits>

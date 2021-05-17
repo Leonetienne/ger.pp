@@ -12,6 +12,10 @@
 #define positive unsigned
 typedef void nichts;
 
+// Boolean values
+static constexpr bool wahr = true;
+static constexpr bool falsch = false;
+
 // Structures
 #define klasse class
 #define struktur struct
@@ -32,7 +36,7 @@ typedef void nichts;
 #define konstausdr constexpr
 #define mutierbar mutable
 #define anfaellig volatile
-#define statisch static
+#define statische static
 #define vorlage template
 #define typname typename
 #define freund friend
@@ -41,6 +45,7 @@ typedef void nichts;
 #define verwende using
 #define namensraum namespace
 #define typdef typedef
+#define wirf throw
 
 // Switch
 #define schalter switch
