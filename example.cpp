@@ -15,7 +15,8 @@ ganzzahl einstieg()
 
     vek.hinten_schieben(99);
 
-    std::aus << vek.bei(0) << std::endz;
+     std::aus << vek.vorne() << std::endz;
+     std::aus << vek.groesse() << std::endz;
 
     rueckgeben 0;
 }
