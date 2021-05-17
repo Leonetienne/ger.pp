@@ -271,6 +271,6 @@ namensraum std
 		nichts resize(kardinal_t nsize)									{ Basis::resize(nsize); }
 		nichts resize(kardinal_t nsize, T val = T())					{ Basis::resize(nsize, val); }
 
-		// Can't privates iterators, or i would break range-based for loops
+		// Can't privatize iterators, or i would break range-based for loops
 	};
 }
