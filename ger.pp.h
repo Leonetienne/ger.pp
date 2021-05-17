@@ -33,6 +33,7 @@ typedef void nichts;
 #define konstausdr constexpr
 #define mutierbar mutable
 #define anfaellig volatile
+#define statisch static
 
 // Switch
 #define schalter switch
