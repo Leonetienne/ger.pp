@@ -1,6 +1,7 @@
 #pragma once
 #include "ger.pp.h"
 #include "ger.vector.h"
+#include "ger.size_t.h"
 #include "ger.pp.internal.h"
 #include <vector>
 
@@ -12,7 +13,7 @@ namespace std
 	bekannt:
 		//! at
 		CONST_NOCONST_METHOD(
-		T& bei(size_t pos),
+		T& bei(kardinal_t pos),
 		{
 			rueckgeben at(pos);
 		})
@@ -58,19 +59,19 @@ namespace std
 		}
 
 		//! size
-		size_t groesse() konstante
+		kardinal_t groesse() konstante
 		{
 			rueckgeben size();
 		}
 
 		//! max_size
-		size_t maximale_groesse() konstante
+		kardinal_t maximale_groesse() konstante
 		{
 			rueckgeben size();
 		}
 
 		//! reserve
-		nichts reservieren(size_t neues_limit)
+		nichts reservieren(kardinal_t neues_limit)
 		{
 			reserve(neues_limit);
 			rueckgeben;
@@ -85,8 +86,8 @@ namespace std
 		nichts push_back(konstante T& wert)								{ Basis::push_back(wert); }
 		nichts push_back(T&& wert)										{ Basis::push_back(wert); }
 
-		T& at(size_t pos)												{ rueckgeben Basis::at(pos); }
-		konstante T& at(size_t pos) konstante							{ rueckgeben Basis::at(pos); }
+		T& at(kardinal_t pos)											{ rueckgeben Basis::at(pos); }
+		konstante T& at(kardinal_t pos) konstante						{ rueckgeben Basis::at(pos); }
 
 		T& front()														{ rueckgeben Basis::front(); }
 		konstante T& front() konstante									{ rueckgeben Basis::front(); }
@@ -99,10 +100,10 @@ namespace std
 
 		bool empty() konstante											{ rueckgeben Basis::empty(); }
 
-		size_t size() konstante											{ rueckgeben Basis::size(); }
+		kardinal_t size() konstante										{ rueckgeben Basis::size(); }
 
-		size_t max_size() konstante										{ rueckgeben Basis::max_size(); }
+		kardinal_t max_size() konstante									{ rueckgeben Basis::max_size(); }
 
-		nichts reserve(size_t new_cap)									{ Basis::reserve(new_cap); }
+		nichts reserve(kardinal_t new_cap)								{ Basis::reserve(new_cap); }
 	};
 }
