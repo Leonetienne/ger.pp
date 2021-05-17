@@ -21,7 +21,7 @@ typedef void nichts;
 #define geschuetzt protected
 
 // Misc keywords
-#define rueckgeben return
+#define gebe_zurueck return
 #define nullzgr nullptr
 #define virtuell virtual
 #define fertig final

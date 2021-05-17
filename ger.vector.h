@@ -15,66 +15,66 @@ namespace std
 		CONST_NOCONST_METHOD(
 		T& bei(kardinal_t pos),
 		{
-			rueckgeben at(pos);
+			gebe_zurueck at(pos);
 		})
 
 		//! push_back
 		nichts hinten_schieben(konstante T& wert)
 		{
 			push_back(wert);
-			rueckgeben;
+			gebe_zurueck;
 		}
 
 		//! push_back
 		nichts hinten_schieben(konstante T&& wert)
 		{
 			push_back(wert);
-			rueckgeben;
+			gebe_zurueck;
 		}
 
 		CONST_NOCONST_METHOD(
 		T& vorne(),
 		{
-			rueckgeben front();
+			gebe_zurueck front();
 		})
 
 		//! back
 		CONST_NOCONST_METHOD(
 		T& hinten(),
 		{
-			rueckgeben back();
+			gebe_zurueck back();
 		})
 
 		//! data
 		CONST_NOCONST_METHOD(
 		T* daten(),
 		{
-			rueckgeben data();
+			gebe_zurueck data();
 		})
 
 		//! empty
 		bool leer() konstante
 		{
-			rueckgeben empty();
+			gebe_zurueck empty();
 		}
 
 		//! size
 		kardinal_t groesse() konstante
 		{
-			rueckgeben size();
+			gebe_zurueck size();
 		}
 
 		//! max_size
 		kardinal_t maximale_groesse() konstante
 		{
-			rueckgeben size();
+			gebe_zurueck size();
 		}
 
 		//! reserve
 		nichts reservieren(kardinal_t neues_limit)
 		{
 			reserve(neues_limit);
-			rueckgeben;
+			gebe_zurueck;
 		}
 
 	geheim:
@@ -86,23 +86,23 @@ namespace std
 		nichts push_back(konstante T& wert)								{ Basis::push_back(wert); }
 		nichts push_back(T&& wert)										{ Basis::push_back(wert); }
 
-		T& at(kardinal_t pos)											{ rueckgeben Basis::at(pos); }
-		konstante T& at(kardinal_t pos) konstante						{ rueckgeben Basis::at(pos); }
+		T& at(kardinal_t pos)											{ gebe_zurueck Basis::at(pos); }
+		konstante T& at(kardinal_t pos) konstante						{ gebe_zurueck Basis::at(pos); }
 
-		T& front()														{ rueckgeben Basis::front(); }
-		konstante T& front() konstante									{ rueckgeben Basis::front(); }
+		T& front()														{ gebe_zurueck Basis::front(); }
+		konstante T& front() konstante									{ gebe_zurueck Basis::front(); }
 
-		T& back()														{ rueckgeben Basis::back(); }
-		konstante T& back() konstante									{ rueckgeben Basis::back(); }
+		T& back()														{ gebe_zurueck Basis::back(); }
+		konstante T& back() konstante									{ gebe_zurueck Basis::back(); }
 
-		T* data()														{ rueckgeben Basis::data(); }
-		konstante T* data() konstante									{ rueckgeben Basis::data(); }
+		T* data()														{ gebe_zurueck Basis::data(); }
+		konstante T* data() konstante									{ gebe_zurueck Basis::data(); }
 
-		bool empty() konstante											{ rueckgeben Basis::empty(); }
+		bool empty() konstante											{ gebe_zurueck Basis::empty(); }
 
-		kardinal_t size() konstante										{ rueckgeben Basis::size(); }
+		kardinal_t size() konstante										{ gebe_zurueck Basis::size(); }
 
-		kardinal_t max_size() konstante									{ rueckgeben Basis::max_size(); }
+		kardinal_t max_size() konstante									{ gebe_zurueck Basis::max_size(); }
 
 		nichts reserve(kardinal_t new_cap)								{ Basis::reserve(new_cap); }
 	};

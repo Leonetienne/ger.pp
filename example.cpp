@@ -4,7 +4,7 @@
 
 [[nichtverwerfen]] ganzzahl max(konstante ganzzahl a, konstante ganzzahl b) keineausnahme
 {
-    rueckgeben (a < b) ? b : a;
+    gebe_zurueck (a < b) ? b : a;
 }
 
 ganzzahl einstieg()
@@ -18,5 +18,5 @@ ganzzahl einstieg()
      std::aus << vek.vorne() << std::endz;
      std::aus << vek.groesse() << std::endz;
 
-    rueckgeben 0;
+    gebe_zurueck 0;
 }
