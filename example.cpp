@@ -1,8 +1,8 @@
 #include "ger.pp.h"
 
-ganzzahl main()
+ganzzahl einstieg()
 {
-    std::kaus << "Hello World!\n" << std::endz;
+    std::kaus << "Hallo Welt!" << std::endz;
 
-    return 0;
+    rueckgeben 0;
 }

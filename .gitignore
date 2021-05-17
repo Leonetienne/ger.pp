@@ -1,0 +1,5 @@
+*
+!ger.*.h
+!example.cpp
+!*.md
+!.gitignore
