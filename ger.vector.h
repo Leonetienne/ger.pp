@@ -5,7 +5,7 @@
 #include "ger.pp.internal.h"
 #include <vector>
 
-namespace std
+namensraum std
 {
 	vorlage <klasse T, klasse Alloz = std::allocator<T>>
 	klasse vektor : bekannt std::vector<T, Alloz>
