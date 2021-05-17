@@ -24,6 +24,7 @@ namensraum std
 			gebe_zurueck Basis::at(pos);
 		})
 
+		//! front
 		CONST_NOCONST_METHOD(
 		T& vorne(),
 		{
