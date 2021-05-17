@@ -21,27 +21,27 @@ namespace std
 		CONST_NOCONST_METHOD(
 		T& bei(kardinal_t pos),
 		{
-			gebe_zurueck at(pos);
+			gebe_zurueck Basis::at(pos);
 		})
 
 		CONST_NOCONST_METHOD(
 		T& vorne(),
 		{
-			gebe_zurueck front();
+			gebe_zurueck Basis::front();
 		})
 
 		//! back
 		CONST_NOCONST_METHOD(
 		T& hinten(),
 		{
-			gebe_zurueck back();
+			gebe_zurueck Basis::back();
 		})
 
 		//! data
 		CONST_NOCONST_METHOD(
 		T* daten(),
 		{
-			gebe_zurueck data();
+			gebe_zurueck Basis::data();
 		})
 
 
@@ -50,38 +50,38 @@ namespace std
 		//! empty
 		bool leer() konstante
 		{
-			gebe_zurueck empty();
+			gebe_zurueck Basis::empty();
 		}
 
 		//! size
 		kardinal_t groesse() konstante
 		{
-			gebe_zurueck size();
+			gebe_zurueck Basis::size();
 		}
 
 		//! max_size
 		kardinal_t maximale_groesse() konstante
 		{
-			gebe_zurueck size();
+			gebe_zurueck Basis::size();
 		}
 
 		//! reserve
 		nichts reservieren(kardinal_t neues_limit)
 		{
-			reserve(neues_limit);
+			Basis::reserve(neues_limit);
 			gebe_zurueck;
 		}
 
 		//! capacity
 		kardinal_t kapazitaet() konstante
 		{
-			gebe_zurueck capacity();
+			gebe_zurueck Basis::capacity();
 		}
 
 		//! shrink_to_fit
 		kardinal_t schrumpfe_um_zu_passen() konstante
 		{
-			shrink_to_fit();
+			Basis::shrink_to_fit();
 			gebe_zurueck;
 		}
 
@@ -91,7 +91,7 @@ namespace std
 		//! clear
 		nichts leeren()
 		{
-			clear();
+			Basis::clear();
 			gebe_zurueck;
 		}
 
@@ -105,7 +105,7 @@ namespace std
 		//! push_back
 		nichts hinten_schieben(konstante T&& wert)
 		{
-			push_back(wert);
+			Basis::push_back(wert);
 			gebe_zurueck;
 		}
 
@@ -113,26 +113,26 @@ namespace std
 		vorlage <klasse... Args>
 		nichts hinten_verschieben(Args&&... args)
 		{
-			emplace_back(args);
+			Basis::emplace_back(args);
 			gebe_zurueck;
 		}
 
 		//! erase
 		Basis::iterator loeschen(Basis::const_iterator pos)
 		{
-			gebe_zurueck erase(pos);
+			gebe_zurueck Basis::erase(pos);
 		}
 
 		//! erase
 		Basis::iterator loeschen(Basis::iterator anfang, Basis::iterator ende)
 		{
-			gebe_zurueck erase(anfang, ende);
+			gebe_zurueck Basis::erase(anfang, ende);
 		}
 
 		//! pop_back
 		nichts platze_hinten()
 		{
-			pop_back();
+			Basis::pop_back();
 			gebe_zurueck;
 		}
 
