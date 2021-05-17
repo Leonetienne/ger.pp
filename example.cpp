@@ -8,7 +8,7 @@
 
 ganzzahl einstieg()
 {
-    std::kaus << "Hallo Welt!" << std::endz;
+    std::aus << "Hallo, Welt!" << std::endz;
 
     rueckgeben 0;
 }

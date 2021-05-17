@@ -1,12 +1,12 @@
 #pragma once
-#include <iostream>
 #include "ger.pp.h"
+#include <iostream>
 
 namespace std
 {
-    statisch std::ostream& kaus = cout;
-    statisch std::ostream& kerr = cerr;
-    statisch std::istream& kein = cin;
+    statisch std::ostream& aus = cout;
+    statisch std::ostream& err = cerr;
+    statisch std::istream& ein = cin;
 
     // std::endz => std::endl
     template <class _Elem, class _Traits>

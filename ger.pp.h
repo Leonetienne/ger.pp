@@ -17,8 +17,8 @@ typedef void nichts;
 #define klasse class
 #define struktur struct
 #define vereinigung union
-#define privat private
-#define oeffentlich public
+#define geheim private
+#define bekannt public
 #define geschuetzt protected
 
 // Misc keywords
@@ -36,6 +36,7 @@ typedef void nichts;
 #define statisch static
 #define vorlage template
 #define typname typename
+#define freund friend
 
 // Switch
 #define schalter switch
