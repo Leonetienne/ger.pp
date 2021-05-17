@@ -1,4 +1,5 @@
 #include "ger.pp.h"
+#include "ger.iostream.h"
 
 ganzzahl einstieg()
 {
