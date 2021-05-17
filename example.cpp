@@ -21,7 +21,7 @@ ganzzahl einstieg()
     vek.hinten_schieben(112);
 
     // Gebe alle Werte aus
-    fuer (konstante ganzzahl  i : vek)
+    fuer (konstante ganzzahl& i : vek)
         std::aus << i << std::umbruch;
 
     // Entferne die letzten zwei Werte
@@ -33,3 +33,6 @@ ganzzahl einstieg()
 
     gebe_zurueck 0;
 }
+
+
+
