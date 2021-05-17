@@ -63,6 +63,19 @@ namespace std
 			rueckgeben size();
 		}
 
+		//! max_size
+		size_t maximale_groesse() konstante
+		{
+			rueckgeben size();
+		}
+
+		//! reserve
+		nichts reservieren(size_t neues_limit)
+		{
+			reserve(neues_limit);
+			rueckgeben;
+		}
+
 	geheim:
 		typdef vector<T, Alloz> Basis;
 
@@ -87,5 +100,9 @@ namespace std
 		bool empty() konstante											{ rueckgeben Basis::empty(); }
 
 		size_t size() konstante											{ rueckgeben Basis::size(); }
+
+		size_t max_size() konstante										{ rueckgeben Basis::max_size(); }
+
+		nichts reserve(size_t new_cap)									{ Basis::reserve(new_cap); }
 	};
 }
