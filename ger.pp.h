@@ -41,6 +41,10 @@ typedef void nichts;
 #define verwende using
 #define namensraum namespace
 #define typdef typedef
+#define falls if
+#define solange while
+#define fuer for
+#define mache do
 
 // Switch
 #define schalter switch
