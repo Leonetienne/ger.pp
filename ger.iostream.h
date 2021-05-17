@@ -5,7 +5,7 @@
 namensraum std
 {
     statische std::ostream& aus = cout;
-    statische std::ostream& err = cerr;
+    statische std::ostream& fehlaus = cerr;
     statische std::istream& ein = cin;
 
     // std::endz => std::endl
