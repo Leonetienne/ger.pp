@@ -136,6 +136,19 @@ namespace std
 			gebe_zurueck;
 		}
 
+		//! resize
+		nichts groesse_aendern(kardinal_t neue_groesse)
+		{
+			Basis::resize(neue_groesse);
+			gebe_zurueck;
+		}
+
+		nichts groesse_aendern(kardinal_t neue_groesse, T wert = T())
+		{
+			Basis::resize(neue_groesse, wert);
+			gebe_zurueck;
+		}
+
 	geheim:
 		typdef vector<T, Alloz> Basis;
 
@@ -178,6 +191,9 @@ namespace std
 		vorlage <klasse... Args>
 		nichts emplace_back(Args&&... args)								{ Basis::emplace_back(args); }
 
-		void pop_back()													{ Basis::pop_back; }
+		nichts pop_back()												{ Basis::pop_back; }
+
+		nichts resize(kardinal_t nsize)									{ Basis::resize(nsize); }
+		nichts resize(kardinal_t nsize, T val = T())					{ Basis::resize(nsize, val); }
 	};
 }
