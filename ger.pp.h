@@ -37,6 +37,8 @@ typedef void nichts;
 #define vorlage template
 #define typname typename
 #define freund friend
+#define neu new
+#define freigeben delete
 
 // Switch
 #define schalter switch
