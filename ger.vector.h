@@ -6,29 +6,30 @@
 namespace std
 {
 	vorlage <klasse T, klasse Alloz = std::allocator<T>>
-		klasse vektor : geheim std::vector<T, Alloz>
+		klasse vektor : bekannt std::vector<T, Alloz>
 	{
 	bekannt:
 		//! at
-		T & bei(std::size_t pos)
+		T & bei(size_t pos)
 		{
 			rueckgeben Basis::at(pos);
 		}
 
-		konstante T & bei(std::size_t pos) konstante
+		//! at
+		konstante T & bei(size_t pos) konstante
 		{
 			rueckgeben Basis::at(pos);
 		}
 
 		//! push_back
-		nichts hinten_schieben(konstante T & wert)
+		nichts hinten_schieben(konstante T& wert)
 		{
 			Basis::push_back(wert);
 			rueckgeben;
 		}
 
 		//! push_back
-		nichts hinten_schieben(konstante T && wert)
+		nichts hinten_schieben(konstante T&& wert)
 		{
 			Basis::push_back(wert);
 			rueckgeben;
@@ -36,8 +37,14 @@ namespace std
 
 
 
-		geheim:
-		typdef std::vector<T, Alloz> Basis;
+	geheim:
+		typdef vector<T, Alloz> Basis;
+
+		// Force users to use the translated methods
+		konstante nichts push_back(konstante T& wert)		{ Basis::push_back(wert); };
+		konstante nichts push_back(konstante T&& wert)		{ Basis::push_back(wert); };
+		T& at(size_t pos)									{ rueckgeben Basis::at(pos); };
+		konstante T& at(size_t pos) konstante				{ rueckgeben Basis::at(pos); };
 
 	};
 }
