@@ -14,11 +14,12 @@ ganzzahl einstieg()
     std::vektor<ganzzahl> vek;
 
     vek.hinten_schieben(99);
+    vek.hinten_schieben(2);
+    vek.hinten_schieben(56);
+    vek.hinten_schieben(112);
 
-     std::aus << vek.vorne() << std::endz;
-     std::aus << vek.groesse() << std::endz;
-     vek.leeren();
-     std::aus << vek.groesse() << std::endz;
+    fuer(konstante ganzzahl & i : vek)
+        std::aus << i << std::endz;
 
     gebe_zurueck 0;
 }

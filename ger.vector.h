@@ -149,10 +149,85 @@ namespace std
 			gebe_zurueck;
 		}
 
+
+		/*  Iterators  */
+		
+		//! begin
+		Basis::iterator anfang() keineausnahme
+		{
+			gebe_zurueck Basis::begin();
+		}
+
+		//! begin
+		Basis::const_iterator anfang() konstante keineausnahme
+		{
+			gebe_zurueck Basis::begin();
+		}
+
+		//! cbegin
+		Basis::const_iterator kanfang() keineausnahme
+		{
+			gebe_zurueck Basis::cbegin();
+		}
+
+
+		//! end
+		Basis::iterator ende() keineausnahme
+		{
+			gebe_zurueck Basis::end();
+		}
+
+		//! end
+		Basis::const_iterator ende() konstante keineausnahme
+		{
+			gebe_zurueck Basis::end();
+		}
+
+		//! cend
+		Basis::const_iterator kende() keineausnahme
+		{
+			gebe_zurueck Basis::cend();
+		}
+
+
+		//! rbegin
+		Basis::iterator ranfang() keineausnahme
+		{
+			gebe_zurueck Basis::rbegin();
+		}
+
+		//! rbegin
+		Basis::const_iterator ranfang() konstante keineausnahme
+		{
+			gebe_zurueck Basis::rbegin();
+		}
+
+		//! crbegin
+		Basis::const_iterator kranfang() keineausnahme
+		{
+			gebe_zurueck Basis::crbegin();
+		}
+
+
+		//! rend
+		Basis::iterator rende() keineausnahme
+		{
+			gebe_zurueck Basis::rend();
+		}
+
+		//! rend
+		Basis::const_iterator rende() konstante keineausnahme
+		{
+			gebe_zurueck Basis::rend();
+		}
+
+		//! crend
+		Basis::const_iterator krende() keineausnahme
+		{
+			gebe_zurueck Basis::crend();
+		}
+
 	geheim:
-		typdef vector<T, Alloz> Basis;
-
-
 		// Force users to use the translated methods
 
 		nichts push_back(konstante T& wert)								{ Basis::push_back(wert); }
@@ -195,5 +270,7 @@ namespace std
 
 		nichts resize(kardinal_t nsize)									{ Basis::resize(nsize); }
 		nichts resize(kardinal_t nsize, T val = T())					{ Basis::resize(nsize, val); }
+
+		// Can't privates iterators, or i would break range-based for loops
 	};
 }
