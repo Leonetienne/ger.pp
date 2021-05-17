@@ -10,7 +10,6 @@
 #define doppel double
 #define lange long
 #define positive unsigned
-
 typedef void nichts;
 
 // Structures
