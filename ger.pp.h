@@ -34,6 +34,8 @@ typedef void nichts;
 #define mutierbar mutable
 #define anfaellig volatile
 #define statisch static
+#define vorlage template
+#define typname typename
 
 // Switch
 #define schalter switch
