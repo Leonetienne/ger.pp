@@ -10,27 +10,19 @@ namespace std
 	vorlage <klasse T, klasse Alloz = std::allocator<T>>
 	klasse vektor : bekannt std::vector<T, Alloz>
 	{
+	geheim:
+		typdef vector<T, Alloz> Basis;
+
 	bekannt:
+
+		/*  Element access  */
+
 		//! at
 		CONST_NOCONST_METHOD(
 		T& bei(kardinal_t pos),
 		{
 			gebe_zurueck at(pos);
 		})
-
-		//! push_back
-		nichts hinten_schieben(konstante T& wert)
-		{
-			push_back(wert);
-			gebe_zurueck;
-		}
-
-		//! push_back
-		nichts hinten_schieben(konstante T&& wert)
-		{
-			push_back(wert);
-			gebe_zurueck;
-		}
 
 		CONST_NOCONST_METHOD(
 		T& vorne(),
@@ -51,6 +43,9 @@ namespace std
 		{
 			gebe_zurueck data();
 		})
+
+
+		/*  Capacity  */
 
 		//! empty
 		bool leer() konstante
@@ -90,6 +85,57 @@ namespace std
 			gebe_zurueck;
 		}
 
+
+		/*  Modifiers  */
+
+		//! clear
+		nichts leeren()
+		{
+			clear();
+			gebe_zurueck;
+		}
+
+		//! push_back
+		nichts hinten_schieben(konstante T& wert)
+		{
+			push_back(wert);
+			gebe_zurueck;
+		}
+
+		//! push_back
+		nichts hinten_schieben(konstante T&& wert)
+		{
+			push_back(wert);
+			gebe_zurueck;
+		}
+
+		//! emplace_back
+		vorlage <klasse... Args>
+		nichts hinten_verschieben(Args&&... args)
+		{
+			emplace_back(args);
+			gebe_zurueck;
+		}
+
+		//! erase
+		Basis::iterator loeschen(Basis::const_iterator pos)
+		{
+			gebe_zurueck erase(pos);
+		}
+
+		//! erase
+		Basis::iterator loeschen(Basis::iterator anfang, Basis::iterator ende)
+		{
+			gebe_zurueck erase(anfang, ende);
+		}
+
+		//! pop_back
+		nichts platze_hinten()
+		{
+			pop_back();
+			gebe_zurueck;
+		}
+
 	geheim:
 		typdef vector<T, Alloz> Basis;
 
@@ -122,5 +168,16 @@ namespace std
 		kardinal_t capacity()											{ gebe_zurueck Basis::capacity(); }
 
 		nichts shrink_to_fit(kardinal_t new_cap)						{ Basis::shrink_to_fit(); }
+
+		nichts clear()													{ Basis::clear(); }
+
+		Basis::iterator erase(Basis::const_iterator pos)				{ gebe_zurueck Basis::erase(pos); }
+
+		Basis::iterator erase(Basis::const_iterator first, Basis::const_iterator last)	{ gebe_zurueck Basis::erase(first, last); }
+
+		vorlage <klasse... Args>
+		nichts emplace_back(Args&&... args)								{ Basis::emplace_back(args); }
+
+		void pop_back()													{ Basis::pop_back; }
 	};
 }

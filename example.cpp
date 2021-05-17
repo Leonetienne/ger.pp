@@ -17,6 +17,8 @@ ganzzahl einstieg()
 
      std::aus << vek.vorne() << std::endz;
      std::aus << vek.groesse() << std::endz;
+     vek.leeren();
+     std::aus << vek.groesse() << std::endz;
 
     gebe_zurueck 0;
 }
