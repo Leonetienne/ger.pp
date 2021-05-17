@@ -38,6 +38,9 @@ typedef void nichts;
 #define freund friend
 #define neu new
 #define freigeben delete
+#define verwende using
+#define namensraum namespace
+#define typdef typedef
 
 // Switch
 #define schalter switch
