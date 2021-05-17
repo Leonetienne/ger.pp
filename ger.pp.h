@@ -25,7 +25,7 @@ static constexpr bool falsch = false;
 #define geschuetzt protected
 
 // Misc keywords
-#define rueckgeben return
+#define gebe_zurueck return
 #define nullzgr nullptr
 #define virtuell virtual
 #define fertig final
@@ -46,6 +46,10 @@ static constexpr bool falsch = false;
 #define namensraum namespace
 #define typdef typedef
 #define wirf throw
+#define falls if
+#define solange while
+#define fuer for
+#define mache do
 
 // Switch
 #define schalter switch
