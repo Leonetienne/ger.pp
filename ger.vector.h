@@ -77,6 +77,19 @@ namespace std
 			gebe_zurueck;
 		}
 
+		//! capacity
+		kardinal_t kapazitaet() konstante
+		{
+			gebe_zurueck capacity();
+		}
+
+		//! shrink_to_fit
+		kardinal_t schrumpfe_um_zu_passen() konstante
+		{
+			shrink_to_fit();
+			gebe_zurueck;
+		}
+
 	geheim:
 		typdef vector<T, Alloz> Basis;
 
@@ -105,5 +118,9 @@ namespace std
 		kardinal_t max_size() konstante									{ gebe_zurueck Basis::max_size(); }
 
 		nichts reserve(kardinal_t new_cap)								{ Basis::reserve(new_cap); }
+
+		kardinal_t capacity()											{ gebe_zurueck Basis::capacity(); }
+
+		nichts shrink_to_fit(kardinal_t new_cap)						{ Basis::shrink_to_fit(); }
 	};
 }
