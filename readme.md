@@ -3,13 +3,14 @@ ger.pp is an esoteric C++ derivative allowing users to program in german.
 This is implemented via preprocessor definitions, type definitions, and wrappers, and should thus provide a more or less good compatibility to C++11 compilers. No support for C++17/20.  
 
 Includes a few STL translations.
-These are:
+These are for now:
 - iostream (cout, cerr, cin, endl)
 - Vector
 
 ## To keep in mind
 ger.pp is an *esoteric* derivative. It is more or less meant as a joke.
 To keep this joke project within limits, it is neither tested, nor under active development. I may extend it whenever i feel like it.
+
 
 ## License
 ```
