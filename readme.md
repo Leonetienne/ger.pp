@@ -14,7 +14,6 @@ To keep this joke project within limits, it is neither tested, nor under active 
 
 ## License
 ```
-
 Don't Be a Jerk: The Open Source Software License.
 Last Update: Jan, 7, 2021
 
