@@ -1,6 +1,6 @@
 *
-!ger.*.h
-!example.cpp
+!ger.pp/*.h
+!ger.pp/*.cpp
 !*.md
 !.gitignore
 !license.TXT
