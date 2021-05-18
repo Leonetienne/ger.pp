@@ -10,7 +10,7 @@ namensraum std
 
     // std::endz => std::endl
     vorlage <klasse _Elem, klasse _Traits>
-    basic_ostream<_Elem, _Traits>& __CLRCALL_OR_CDECL endz(basic_ostream<_Elem, _Traits>& os)
+    basic_ostream<_Elem, _Traits>& __CLRCALL_OR_CDECL umbruch(basic_ostream<_Elem, _Traits>& os)
     {
         os.put(os.widen('\n'));
         os.flush();
