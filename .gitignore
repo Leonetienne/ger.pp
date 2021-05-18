@@ -1,6 +1,12 @@
-*
+.*
+Debug/
+Release/
+*.sln
+ger.pp/*
+Doxygen/*
 !ger.pp/*.h
 !ger.pp/*.cpp
 !*.md
 !.gitignore
 !license.TXT
+!Doxygen/doxyfig
