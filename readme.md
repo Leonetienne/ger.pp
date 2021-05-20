@@ -1,6 +1,6 @@
 # ger.pp
 ger.pp is an esoteric C++ derivative allowing users to program in german.  
-This is implemented via preprocessor definitions, type definitions, and wrappers, and should thus provide a more or less good compatibility to C++11 compilers. No support for C++17/20.  
+This is implemented via preprocessor definitions, type definitions, and wrappers, and should thus provide more or less good compatibility to C++11 compilers. No support for C++17/20.  
 
 Includes a few STL translations.
 These are for now:
@@ -23,7 +23,7 @@ ganzzahl einstieg()
 ```
 
 ### Flow-control
-ger.cpp further reintroduces oldies such as the `falls`-statement, the popular `fuer`- and `solange`-loop, as the slightly lesser known `mache solange`-loop.
+ger.pp further reintroduces oldies such as the `falls`-statement, the popular `fuer`- and `solange`-loop, as the slightly lesser known `mache solange`-loop.
 ```
 ganzzahl einstieg(ganzzahl argZahl, zeichen** argWerte)
 {
