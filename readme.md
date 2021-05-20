@@ -11,6 +11,62 @@ These are for now:
 ger.pp is an *esoteric* derivative. It is more or less meant as a joke.
 To keep this joke project within limits, it is neither tested, nor under active development. I may extend it whenever i feel like it.
 
+## Examples
+### iostream
+ger.pp introduces classics like `std::aus`, `std::ein`, `std::fehlaus`, and `std::umbruch`.
+```cpp
+ganzzahl einstieg()
+{
+    std::aus << "Hallo, Welt!" << std::umbruch;
+    gebe_zurueck 0;
+}
+```
+
+### Flow-control
+ger.cpp further reintroduces oldies such as the `falls`-statement, the popular `fuer`- and `solange`-loop, as the slightly lesser known `mache solange`-loop.
+```
+ganzzahl einstieg(ganzzahl argZahl, zeichen** argWerte)
+{
+    falls (argZahl < 2)
+    {
+        std::fehlaus << "Mindestens ein Argument erforderlich!" << std::umbruch;
+        gebe_zurueck -1;
+    }
+
+    fuer (zeichen* z = *argWerte; *z != '\0'; z++)
+        std::aus << *argWerte;
+    std::aus << std::umbruch;
+
+    gebe_zurueck 0;
+}
+```
+
+### std::vektor
+ger.pp comes with well knowns such as `std::vektor::hinten_schieben`, `std::vektor::platze_hinten`, and `std::vektor::schrumpfe_um_zu_passen`.  
+See for yourself!
+```cpp
+ganzzahl einstieg()
+{
+    // Erstelle vektor
+    std::vektor<ganzzahl> vek;
+
+    // Schiebe Werte in den Vektor
+    vek.hinten_schieben(99);
+    vek.hinten_schieben(2);
+
+    // Gebe alle Werte aus
+    fuer (konstante ganzzahl& i : vek)
+        std::aus << i << std::umbruch;
+
+    // Entferne den letzten Wert
+    vek.platze_hinten();
+
+    // Arbeitsspeicher entlasten
+    vek.schrumpfe_um_zu_passen();
+
+    gebe_zurueck 0;
+}
+```
 
 ## License
 ```
