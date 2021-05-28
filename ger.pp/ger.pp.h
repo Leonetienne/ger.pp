@@ -39,7 +39,9 @@ static constexpr bool falsch = false;
 #define vorlage template
 #define typname typename
 #define freund friend
-#define neu new
+#define neuer new
+#define neue new
+#define neues new
 #define freigeben delete
 #define verwende using
 #define namensraum namespace
