@@ -24,7 +24,7 @@ ganzzahl einstieg()
 
 ### Flow-control
 ger.pp further reintroduces oldies such as the `falls`-statement, the popular `fuer`- and `solange`-loop, as the slightly lesser known `mache solange`-loop.
-```
+```cpp
 ganzzahl einstieg(ganzzahl argZahl, zeichen** argWerte)
 {
     falls (argZahl < 2)
