@@ -1,5 +1,4 @@
 #pragma once
-#include <iostream>
 
 // Primitives
 // These are macros to support modifiers
