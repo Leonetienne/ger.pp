@@ -8,7 +8,7 @@ namensraum std
     statische std::ostream& fehlaus = cerr;
     statische std::istream& ein = cin;
 
-    // std::endz => std::endl
+    // std::umruch => std::endl
     vorlage <klasse _Elem, klasse _Traits>
     basic_ostream<_Elem, _Traits>& __CLRCALL_OR_CDECL umbruch(basic_ostream<_Elem, _Traits>& os)
     {
