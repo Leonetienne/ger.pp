@@ -80,7 +80,7 @@ namensraum std
 		}
 
 		//! shrink_to_fit
-		kardinal_t schrumpfe_um_zu_passen() konstante
+		void schrumpfe_um_zu_passen()
 		{
 			Basis::shrink_to_fit();
 			gebe_zurueck;
